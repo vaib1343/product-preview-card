@@ -1,14 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
 import styled from "styled-components";
 import { Image } from "./assets";
-import { useEffect, useState } from "react";
 
 function App() {
     return (
         <S.card>
             <S.imageContainer>
-                <img src={Image.productDesktop} alt="mobile" />
+                <img src={Image.productMobile} alt="mobile" />
             </S.imageContainer>
             <S.detailContainer>
                 <p>perfume</p>
@@ -52,12 +50,11 @@ const S = {
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
             width: 100%;
-            height: 30rem;
             @media only screen and (min-width: 600px) {
+                content: url('images/image-product-desktop.jpg');
                 border-top-left-radius: 1rem;
                 border-bottom-left-radius: 1rem;
                 border-top-right-radius: 0rem;
-                height: 100%;
             }
         }
     `,
