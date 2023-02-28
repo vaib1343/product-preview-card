@@ -57,6 +57,7 @@ const S = {
                 border-top-left-radius: 1rem;
                 border-bottom-left-radius: 1rem;
                 border-top-right-radius: 0rem;
+                height: 100%;
             }
         }
     `,
